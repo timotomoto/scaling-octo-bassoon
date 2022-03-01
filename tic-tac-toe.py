@@ -94,3 +94,10 @@ else:
     player2 = Player(player2_name, "O")
     coin_flip_winner = player1
     coin_flip_loser = player2
+print(player1)
+print(player2)
+print("To play you will type which location you want to play at.")
+coard = [["1", "2", "3"], ["4", "5", "6"], ["7", "8", "9"]]
+print("e.g;")
+for num in coard:
+    print(num)
