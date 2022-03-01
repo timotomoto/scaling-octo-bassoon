@@ -22,4 +22,37 @@ class Player:
         elif place <= 8:
             board[2].pop(place-6)
             board[2].insert(place-6, self.XO)
-            
+
+    def winner(self):
+        if self.XO in board[0][0] and self.XO in board[0][1] and self.XO in board[0][2]:
+            print("{} wins!!".format(self.name))
+            self.win = True
+            quit()
+        elif self.XO in board[1][0] and self.XO in board[1][1] and self.XO in board[1][2]:
+            print("{} wins!!".format(self.name))
+            self.win = True
+            quit()
+        elif self.XO in board[2][0] and self.XO in board[2][1] and self.XO in board[2][2]:
+            print("{} wins!!".format(self.name))
+            self.win = True
+            quit()
+        elif self.XO in board[0][0] and self.XO in board[1][0] and self.XO in board[2][0]:
+            print("{} wins!!".format(self.name))
+            self.win = True
+            quit()
+        elif self.XO in board[0][1] and self.XO in board[1][1] and self.XO in board[2][1]:
+            print("{} wins!!".format(self.name))
+            self.win = True
+            quit()
+        elif self.XO in board[0][2] and self.XO in board[1][2] and self.XO in board[2][2]:
+            print("{} wins!!".format(self.name))
+            self.win = True
+            quit()
+        elif self.XO in board[0][0] and self.XO in board[1][1] and self.XO in board[2][2]:
+            print("{} wins!!".format(self.name))
+            self.win = True
+            quit()
+        elif self.XO in board[0][2] and self.XO in board[1][1] and self.XO in board[2][0]:
+            print("{} wins!!".format(self.name))
+            self.win = True
+            quit()   
