@@ -66,3 +66,9 @@ def boardd():
     player1.winner()
     player2.winner()
     tie()
+
+def coin_flip(): 
+    coin = random.randint(0,1)
+    if coin == 0:
+        return "Heads"
+    return "Tails"
