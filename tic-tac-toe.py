@@ -75,3 +75,8 @@ def coin_flip():
 
 player1_name = input("Let's play a game of tic-tac-toe! What is your name? ")
 player2_name = input("Hello " + player1_name + ", What is your opponent's name? ")
+coin_f = input("Ok, to see who gets to play first we will flip a coin. " + player2_name + ", Heads or Tails? ")
+coin_flip_pick = coin_f.title()
+while coin_flip_pick != "Heads" and coin_flip_pick != "Tails":
+  coin_f = input("That wasn't one of the two options, try again. ")
+  coin_flip_pick = coin_f.title()
