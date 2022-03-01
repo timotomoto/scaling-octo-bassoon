@@ -56,3 +56,13 @@ class Player:
             print("{} wins!!".format(self.name))
             self.win = True
             quit()   
+def tie():
+    if " " not in board[0] and " " not in board[1] and " " not in board[2] and player1.win == False and player2.win == False:
+        print("Tie")
+
+def boardd():
+    for places in board:
+        print(places)
+    player1.winner()
+    player2.winner()
+    tie()
