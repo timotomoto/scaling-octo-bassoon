@@ -72,3 +72,6 @@ def coin_flip():
     if coin == 0:
         return "Heads"
     return "Tails"
+
+player1_name = input("Let's play a game of tic-tac-toe! What is your name? ")
+player2_name = input("Hello " + player1_name + ", What is your opponent's name? ")
