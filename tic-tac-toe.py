@@ -78,5 +78,19 @@ player2_name = input("Hello " + player1_name + ", What is your opponent's name? 
 coin_f = input("Ok, to see who gets to play first we will flip a coin. " + player2_name + ", Heads or Tails? ")
 coin_flip_pick = coin_f.title()
 while coin_flip_pick != "Heads" and coin_flip_pick != "Tails":
-  coin_f = input("That wasn't one of the two options, try again. ")
-  coin_flip_pick = coin_f.title()
+    coin_f = input("That wasn't one of the two options, try again. ")
+    coin_flip_pick = coin_f.title()
+coin_flip_result = coin_flip()
+print("The coin landed on " + coin_flip_result + ".")
+if coin_flip_pick == coin_flip_result:
+    print("Congrats " + player2_name + ", you get to play first!")
+    player1 = Player(player1_name, "O")
+    player2 = Player(player2_name, "X")
+    coin_flip_winner = player2
+    coin_flip_loser = player1
+else:
+    print("Looks like " + player1_name + " gets to play first!")
+    player1 = Player(player1_name, "X")
+    player2 = Player(player2_name, "O")
+    coin_flip_winner = player1
+    coin_flip_loser = player2
