@@ -115,3 +115,52 @@ while int(choice)-1 not in numbers:
   choice = input("That was already played, try something else. ")
 coin_flip_loser.play(int(choice)-1)
 boardd()
+choice = input("{} turn! ".format(coin_flip_winner.name))
+while choice != "1" and choice != "2" and choice != "3" and choice != "4" and choice != "5" and choice != "6" and choice != "7" and choice != "8" and choice != "9":
+  choice = input("whoops, something went wrong try again. ")
+while int(choice)-1 not in numbers:
+  choice = input("That was already played, try something else. ")
+coin_flip_winner.play(int(choice)-1)
+boardd()
+choice = input("{} turn! ".format(coin_flip_loser.name))
+while choice != "1" and choice != "2" and choice != "3" and choice != "4" and choice != "5" and choice != "6" and choice != "7" and choice != "8" and choice != "9":
+  choice = input("whoops, something went wrong try again. ")
+while int(choice)-1 not in numbers:
+  choice = input("That was already played, try something else. ")
+coin_flip_loser.play(int(choice)-1)
+boardd()
+choice = input("{} turn! ".format(coin_flip_winner.name))
+while choice != "1" and choice != "2" and choice != "3" and choice != "4" and choice != "5" and choice != "6" and choice != "7" and choice != "8" and choice != "9":
+  choice = input("whoops, something went wrong try again. ")
+while int(choice)-1 not in numbers:
+  choice = input("That was already played, try something else. ")
+coin_flip_winner.play(int(choice)-1)
+boardd()
+choice = input("{} turn! ".format(coin_flip_loser.name))
+while choice != "1" and choice != "2" and choice != "3" and choice != "4" and choice != "5" and choice != "6" and choice != "7" and choice != "8" and choice != "9":
+  choice = input("whoops, something went wrong try again. ")
+while int(choice)-1 not in numbers:
+  choice = input("That was already played, try something else. ")
+coin_flip_loser.play(int(choice)-1)
+boardd()
+choice = input("{} turn! ".format(coin_flip_winner.name))
+while choice != "1" and choice != "2" and choice != "3" and choice != "4" and choice != "5" and choice != "6" and choice != "7" and choice != "8" and choice != "9":
+  choice = input("whoops, something went wrong try again. ")
+while int(choice)-1 not in numbers:
+  choice = input("That was already played, try something else. ")
+coin_flip_winner.play(int(choice)-1)
+boardd()
+choice = input("{} turn! ".format(coin_flip_loser.name))
+while choice != "1" and choice != "2" and choice != "3" and choice != "4" and choice != "5" and choice != "6" and choice != "7" and choice != "8" and choice != "9":
+  choice = input("whoops, something went wrong try again. ")
+while int(choice)-1 not in numbers:
+  choice = input("That was already played, try something else. ")
+coin_flip_loser.play(int(choice)-1)
+boardd()
+choice = input("{} turn! ".format(coin_flip_winner.name))
+while choice != "1" and choice != "2" and choice != "3" and choice != "4" and choice != "5" and choice != "6" and choice != "7" and choice != "8" and choice != "9":
+  choice = input("whoops, something went wrong try again. ")
+while int(choice)-1 not in numbers:
+  choice = input("That was already played, try something else. ")
+coin_flip_winner.play(int(choice)-1)
+boardd()
